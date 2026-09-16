@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery - Contact & Pre-Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>North Star Bakery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact & Pre-Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Inquiry & Pre-Order Request</h2>
+    
+    <!-- Form containing all required rubrics: fieldset, legend, labels, allergy notes -->
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Request Details</legend>
+
+        <label for="req-type">Request Type:</label>
+        <select id="req-type" name="req-type">
+          <option value="preorder">Pre-Order Items</option>
+          <option value="inquiry">General Inquiry</option>
+        </select>
+
+        <label for="pickupdate">Pickup Date:</label>
+        <input type="date" id="pickupdate" name="pickupdate">
+
+        <label for="itemdetails">Item Details & Quantity:</label>
+        <textarea id="itemdetails" name="itemdetails" rows="4" placeholder="List the bakery items you wish to pre-order..."></textarea>
+
+        <label for="allergies">Allergy Notes (if applicable):</label>
+        <input type="text" id="allergies" name="allergies" placeholder="e.g., Nut allergy, gluten sensitivity">
+      </fieldset>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>

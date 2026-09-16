@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>North Star Bakery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact & Pre-Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to Our Neighborhood Bakery</h2>
+      <p>Handcrafted breads, fresh pastries, and warm coffee served fresh every morning.</p>
+    </section>
+
+    <!-- Responsive Picture Element -->
+    <section>
+      <h3>Storefront & Atmosphere</h3>
+      <picture>
+        <source media="(min-width: 768px)" srcset="bakery-feature-large.jpg">
+        <img src="bakery-feature-small.jpg" alt="North Star Bakery welcoming storefront interior">
+      </picture>
+    </section>
+
+    <section class="card-grid">
+      <div class="card">
+        <h3>What We're Known For</h3>
+        <p>Traditional sourdough loaves made with organic flour and local ingredients.</p>
+      </div>
+      <div class="card">
+        <h3>Hours & Location</h3>
+        <p>Mon - Sat: 6:00 AM - 4:00 PM<br>123 Main Street, Community Town</p>
+      </div>
+    </section>
+
+    <!-- Audio Element with Fallback -->
+    <section>
+      <h3>Welcome Message</h3>
+      <audio controls>
+        <source src="bakery-welcome.mp3" type="audio/mpeg">
+        Your browser does not support the audio element. Listen to our audio welcome message at North Star Bakery!
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
